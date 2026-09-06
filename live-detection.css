@@ -1,0 +1,265 @@
+/* =========================================================
+   HERO SOC RADAR
+========================================================= */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.hero h1 {
+  flex: 1 1 auto;
+  max-width: 920px;
+}
+
+.hero-radar {
+  flex: 0 0 clamp(260px, 25vw, 390px);
+  width: clamp(260px, 25vw, 390px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.radar-frame {
+  position: relative;
+  width: min(25vw, 350px);
+  min-width: 245px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid rgba(181,108,255,.32);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, rgba(181,108,255,.13), transparent 23%),
+    radial-gradient(circle at center, rgba(181,108,255,.05), rgba(8,7,10,.96) 68%);
+  box-shadow:
+    0 0 55px rgba(181,108,255,.10),
+    inset 0 0 45px rgba(181,108,255,.08);
+}
+
+.radar-grid,
+.radar-ring,
+.radar-cross,
+.radar-sweep,
+.radar-core,
+.radar-blip {
+  position: absolute;
+}
+
+.radar-grid {
+  inset: 0;
+  background:
+    repeating-radial-gradient(circle at center, transparent 0 31px, rgba(181,108,255,.045) 32px 33px),
+    linear-gradient(90deg, transparent 49.7%, rgba(181,108,255,.10) 50%, transparent 50.3%),
+    linear-gradient(0deg, transparent 49.7%, rgba(181,108,255,.10) 50%, transparent 50.3%);
+}
+
+.radar-ring {
+  inset: 14%;
+  border: 1px solid rgba(181,108,255,.18);
+  border-radius: 50%;
+}
+
+.ring-two { inset: 29%; }
+.ring-three { inset: 43%; border-color: rgba(181,108,255,.22); }
+
+.radar-cross { background: rgba(181,108,255,.08); }
+.cross-x { left: 7%; right: 7%; top: 50%; height: 1px; }
+.cross-y { top: 7%; bottom: 7%; left: 50%; width: 1px; }
+
+.radar-sweep {
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 1px;
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(220,191,255,.95), rgba(181,108,255,.42), transparent);
+  box-shadow: 0 0 10px rgba(181,108,255,.55);
+  animation: radarSweep 3.6s linear infinite;
+}
+
+.radar-sweep::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -34px;
+  width: 100%;
+  height: 68px;
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(181,108,255,.10), transparent 75%);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.radar-core {
+  left: calc(50% - 4px);
+  top: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d8b8ff;
+  box-shadow: 0 0 16px rgba(181,108,255,.9);
+  animation: corePulse 1.8s ease-in-out infinite;
+}
+
+@keyframes corePulse {
+  0%, 100% { transform: scale(.8); opacity: .75; }
+  50% { transform: scale(1.35); opacity: 1; }
+}
+
+.radar-blip {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #d8b8ff;
+  box-shadow: 0 0 12px rgba(181,108,255,.95);
+  animation: blipPulse 1.7s ease-in-out infinite;
+}
+
+.blip-one { left: 70%; top: 27%; animation-delay: .2s; }
+.blip-two { left: 29%; top: 36%; animation-delay: .8s; }
+.blip-three { left: 76%; top: 63%; animation-delay: 1.2s; }
+.blip-four { left: 40%; top: 76%; animation-delay: 1.55s; }
+
+@keyframes blipPulse {
+  0%, 100% { opacity: .22; transform: scale(.7); }
+  45%, 65% { opacity: 1; transform: scale(1.45); }
+}
+
+.radar-meta {
+  width: min(25vw, 350px);
+  min-width: 245px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 1.2px;
+  color: var(--text);
+}
+
+.radar-meta span:first-child {
+  color: var(--purple-light);
+}
+
+.radar-meta i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: var(--purple-light);
+  box-shadow: 0 0 8px rgba(181,108,255,.8);
+  animation: corePulse 1.8s ease-in-out infinite;
+}
+
+/* =========================================================
+   PROJECT DOMAIN LAYOUT
+========================================================= */
+
+.project-domain-layout {
+  margin-top: 10px;
+}
+
+.project-domain-section {
+  margin-top: 22px;
+}
+
+.project-domain-section:first-child {
+  margin-top: 0;
+}
+
+.project-domain-title {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 0 0 14px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-domain-title span {
+  font-family: var(--mono);
+  font-size: 8px;
+  color: var(--purple);
+  letter-spacing: 1.5px;
+}
+
+.project-domain-title strong {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  color: var(--text-bright);
+  font-weight: 500;
+}
+
+.soc-project-section .project-domain-title strong {
+  color: var(--purple-light);
+}
+
+.usable-project-section .project-domain-title strong {
+  color: var(--text-bright);
+}
+
+/* Keep the two SOC cards on one row when space allows. */
+.soc-project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .hero {
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .hero-radar {
+    flex-basis: 250px;
+    width: 250px;
+  }
+
+  .radar-frame,
+  .radar-meta {
+    width: 250px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    display: block;
+  }
+
+  .hero-radar {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .radar-frame,
+  .radar-meta {
+    width: min(78vw, 320px);
+  }
+
+  .radar-meta {
+    margin: 0 auto;
+  }
+
+  .project-domain-title {
+    gap: 10px;
+  }
+
+  .project-domain-title strong {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .soc-project-grid {
+    grid-template-columns: 1fr;
+  }
+}
