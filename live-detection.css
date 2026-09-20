@@ -263,3 +263,133 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================================
+   NETWORK SECURITY MONITORING PROJECT
+========================================================= */
+.soc-project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.nsm-detail-wrap .project03-number {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.nsm-metric-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin-top:30px;
+}
+.nsm-metric-grid > div {
+  border:1px solid var(--border);
+  background:var(--surface);
+  padding:18px;
+  min-height:100px;
+}
+.nsm-metric-grid strong {
+  display:block;
+  color:var(--purple-light);
+  font-family:var(--mono);
+  font-size:25px;
+  margin-bottom:8px;
+}
+.nsm-metric-grid span {
+  color:var(--text);
+  font-family:var(--mono);
+  font-size:8px;
+  line-height:1.5;
+}
+.nsm-architecture {
+  border:1px solid var(--border);
+  background:#050505;
+  padding:10px;
+  margin-top:10px;
+}
+.nsm-architecture img {
+  display:block;
+  width:100%;
+  max-width:none!important;
+  max-height:none!important;
+}
+.nsm-evidence-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-top:32px;
+}
+.nsm-evidence-grid figure {
+  margin:0;
+  border:1px solid var(--border);
+  background:var(--surface);
+  padding:10px;
+}
+.nsm-evidence-grid img {
+  display:block;
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border:0;
+}
+.nsm-evidence-grid figcaption {
+  color:#68626f;
+  font-family:var(--mono);
+  font-size:7px;
+  line-height:1.5;
+  margin-top:8px;
+}
+.nsm-detection-cards {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin-top:28px;
+}
+.nsm-detection-cards .project-highlight {
+  margin:0;
+  min-height:120px;
+}
+.nsm-detection-cards .project-highlight span {
+  display:block;
+  color:var(--text);
+  font-weight:400;
+  margin-top:10px;
+  line-height:1.6;
+}
+.nsm-flow {
+  margin-top:30px;
+}
+.nsm-alert-image img {
+  max-width:75%!important;
+  max-height:620px!important;
+}
+.nsm-artifact-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:28px;
+}
+.nsm-artifact-links a {
+  border:1px solid rgba(181,108,255,.35);
+  color:var(--purple-light);
+  padding:10px 12px;
+  font-family:var(--mono);
+  font-size:7px;
+  letter-spacing:1px;
+}
+.nsm-artifact-links a:hover {
+  border-color:var(--purple-light);
+  text-shadow:var(--purple-glow);
+}
+@media (max-width: 900px) {
+  .soc-project-grid,
+  .nsm-evidence-grid { grid-template-columns:1fr; }
+  .nsm-metric-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 620px) {
+  .nsm-metric-grid,
+  .nsm-detection-cards { grid-template-columns:1fr; }
+  .nsm-alert-image img { max-width:100%!important; }
+}

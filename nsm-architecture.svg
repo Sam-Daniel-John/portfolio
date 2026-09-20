@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<defs>
+  <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#b56cff"/><stop offset="1" stop-color="#c98cff"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="650" fill="#050505"/>
+<g stroke="#25242b" fill="#09090b">
+  <rect x="60" y="80" width="250" height="120" rx="6"/>
+  <rect x="475" y="60" width="250" height="150" rx="6"/>
+  <rect x="890" y="80" width="250" height="120" rx="6"/>
+  <rect x="60" y="390" width="250" height="120" rx="6"/>
+  <rect x="475" y="370" width="250" height="160" rx="6"/>
+  <rect x="890" y="390" width="250" height="120" rx="6"/>
+</g>
+<g font-family="monospace" text-anchor="middle">
+  <text x="185" y="115" fill="#c98cff" font-size="18">LOCAL NETWORK</text>
+  <text x="185" y="148" fill="#e9e7ee" font-size="15">192.168.2.0/24</text>
+  <text x="600" y="105" fill="#c98cff" font-size="18">KALI LINUX</text>
+  <text x="600" y="138" fill="#e9e7ee" font-size="15">wlan0 · 192.168.2.76</text>
+  <text x="600" y="174" fill="#9693a3" font-size="13">Nmap · tcpdump · Wireshark</text>
+  <text x="1015" y="115" fill="#c98cff" font-size="18">TRAFFIC</text>
+  <text x="1015" y="148" fill="#e9e7ee" font-size="15">ARP · DNS · TCP · ICMP</text>
+  <text x="185" y="425" fill="#c98cff" font-size="18">SURICATA IDS</text>
+  <text x="185" y="458" fill="#e9e7ee" font-size="15">Custom rules</text>
+  <text x="185" y="485" fill="#9693a3" font-size="13">ICMP + TCP SYN</text>
+  <text x="600" y="410" fill="#c98cff" font-size="18">ALERT PIPELINE</text>
+  <text x="600" y="445" fill="#e9e7ee" font-size="15">fast.log</text>
+  <text x="600" y="475" fill="#e9e7ee" font-size="15">Python log analyzer</text>
+  <text x="600" y="505" fill="#9693a3" font-size="13">counts · sources · destinations</text>
+  <text x="1015" y="425" fill="#c98cff" font-size="18">ASSESSMENT</text>
+  <text x="1015" y="458" fill="#e9e7ee" font-size="15">Services · SSH · firewall</text>
+  <text x="1015" y="485" fill="#9693a3" font-size="13">hardening recommendations</text>
+</g>
+<g stroke="url(#g)" stroke-width="3" fill="none" filter="url(#glow)">
+  <path d="M310 140 H475"/>
+  <path d="M725 135 H890"/>
+  <path d="M600 210 V370"/>
+  <path d="M310 450 H475"/>
+  <path d="M725 450 H890"/>
+</g>
+<g fill="#c98cff">
+  <circle cx="475" cy="140" r="5"/><circle cx="890" cy="140" r="5"/><circle cx="600" cy="370" r="5"/><circle cx="475" cy="450" r="5"/><circle cx="890" cy="450" r="5"/>
+</g>
+<text x="600" y="590" fill="#68626f" font-family="monospace" font-size="12" text-anchor="middle">NETWORK SECURITY MONITORING &amp; DETECTION LAB</text>
+</svg>
