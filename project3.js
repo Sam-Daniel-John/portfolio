@@ -50,9 +50,9 @@ Kali TCP baseline: 1000 ports scanned, 0 open</code></pre>
           <p>I captured baseline traffic with tcpdump and investigated the resulting PCAP in Wireshark. The analysis included ARP, DNS, TCP, IPv6 and other normal network activity.</p>
 
           <div class="nsm-evidence-grid">
-            <figure><img src="./nsm-evidence/wireshark-arp.png" alt="Wireshark ARP traffic analysis" loading="lazy"><figcaption>ARP traffic observed during the baseline capture.</figcaption></figure>
-            <figure><img src="./nsm-evidence/wireshark-dna.png" alt="Wireshark DNS traffic analysis" loading="lazy"><figcaption>DNS traffic investigated in the captured traffic.</figcaption></figure>
-            <figure><img src="./nsm-evidence/wireshark-tcp.png" alt="Wireshark TCP traffic analysis" loading="lazy"><figcaption>TCP traffic used for protocol-level investigation.</figcaption></figure>
+            <figure><img src="./wireshark-arp.png" alt="Wireshark ARP traffic analysis" loading="lazy"><figcaption>ARP traffic observed during the baseline capture.</figcaption></figure>
+            <figure><img src="./wireshark-dna.png" alt="Wireshark DNS traffic analysis" loading="lazy"><figcaption>DNS traffic investigated in the captured traffic.</figcaption></figure>
+            <figure><img src="./wireshark-tcp.png" alt="Wireshark TCP traffic analysis" loading="lazy"><figcaption>TCP traffic used for protocol-level investigation.</figcaption></figure>
           </div>
         </section>
 
@@ -78,7 +78,7 @@ Kali TCP baseline: 1000 ports scanned, 0 open</code></pre>
           <h2>Detection validation</h2>
           <p>I validated the TCP SYN detection by running a controlled Nmap SYN scan against the local network gateway.</p>
           <div class="research-image-block nsm-alert-image">
-            <img src="./nsm-evidence/syn-scan-alert.jpg" alt="Suricata fast.log showing validated TCP SYN scan detection" loading="lazy">
+            <img src="./syn-scan-alert.jpg" alt="Suricata fast.log showing validated TCP SYN scan detection" loading="lazy">
             <span>Suricata alert evidence showing the custom TCP SYN scan detection firing during controlled Nmap testing.</span>
           </div>
         </section>
@@ -131,9 +131,9 @@ Destination IPs:
           <h2>Project outcome</h2>
           <p>The final workflow connects <strong>network visibility → traffic investigation → IDS detection → alert analysis → infrastructure assessment</strong> in one small, reproducible security monitoring environment.</p>
           <div class="nsm-artifact-links">
-            <a href="./nsm-evidence/security-assessment.md" target="_blank" rel="noopener">SECURITY ASSESSMENT ↗</a>
-            <a href="./nsm-evidence/syn-scan-alert.txt" target="_blank" rel="noopener">DETECTION LOG ↗</a>
-            <a href="./nsm-evidence/log_analyzer.py" target="_blank" rel="noopener">PYTHON ANALYZER ↗</a>
+            <a href="./security-assessment.md" target="_blank" rel="noopener">SECURITY ASSESSMENT ↗</a>
+            <a href="./syn-scan-alert.txt" target="_blank" rel="noopener">DETECTION LOG ↗</a>
+            <a href="./log_analyzer.py" target="_blank" rel="noopener">PYTHON ANALYZER ↗</a>
           </div>
         </section>
 
