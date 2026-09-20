@@ -1,0 +1,28 @@
+# Nmap 7.95 scan initiated Thu Sep 17 21:52:41 2026 as: /usr/lib/nmap/nmap -sn -oN /home/black/network-security-monitoring/logs/baseline-host-discovery.txt 192.168.2.0/24
+Nmap scan report for speedport.ip (192.168.2.1)
+Host is up (0.027s latency).
+MAC Address: 4C:22:F3:8B:0C:1C (Arcadyan)
+Nmap scan report for iPhone (192.168.2.33)
+Host is up (0.45s latency).
+MAC Address: 1E:04:55:21:90:84 (Unknown)
+Nmap scan report for PC-HAKAN (192.168.2.41)
+Host is up (1.0s latency).
+MAC Address: 0A:8A:F1:06:B6:6C (Unknown)
+Nmap scan report for iPhone (192.168.2.43)
+Host is up (0.45s latency).
+MAC Address: 22:5A:FE:27:D8:43 (Unknown)
+Nmap scan report for SamDaniel (192.168.2.48)
+Host is up (0.90s latency).
+MAC Address: 50:1B:D2:A8:03:50 (Unknown)
+Nmap scan report for Sam-s-Tab-S9-FE (192.168.2.65)
+Host is up (1.2s latency).
+MAC Address: 0E:EF:15:05:D1:62 (Unknown)
+Nmap scan report for TL-WA850RE (192.168.2.75)
+Host is up (0.90s latency).
+MAC Address: 0E:EF:15:05:D1:62 (Unknown)
+Nmap scan report for Sam-s-S20-FE (192.168.2.100)
+Host is up (0.46s latency).
+MAC Address: 0E:EF:15:05:D1:62 (Unknown)
+Nmap scan report for kali (192.168.2.76)
+Host is up.
+# Nmap done at Thu Sep 17 21:53:07 2026 -- 256 IP addresses (9 hosts up) scanned in 26.14 seconds

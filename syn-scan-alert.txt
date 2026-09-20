@@ -1,0 +1,8 @@
+09/20/2026-16:24:54.992231  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:256
+09/20/2026-16:25:00.367780  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:904
+09/20/2026-16:25:05.400287  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:831
+09/20/2026-16:25:10.431225  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:916
+09/20/2026-16:25:15.464985  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:607
+09/20/2026-16:25:20.496176  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:933
+09/20/2026-16:25:25.526594  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:263
+09/20/2026-16:25:30.554234  [**] [1:1000002:2] ETIS LAB - Internal TCP SYN Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.2.76:54349 -> 192.168.2.1:923
