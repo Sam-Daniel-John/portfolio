@@ -1,0 +1,11 @@
+{
+ "source": "Portfolio Wazuh Detection Engineering project",
+ "endpoint": "Windows + Sysmon",
+ "event_type": "Suspicious PowerShell execution",
+ "observables": ["-NoProfile", "encoded command"],
+ "detection": "Custom Wazuh rule",
+ "severity": "Level 12",
+ "attack_mapping": "MITRE ATT&CK T1059.001",
+ "simulation": "Harmless lab simulation",
+ "governance_translation": "Endpoint detection -> incident handling -> access-control review -> remediation owner"
+}

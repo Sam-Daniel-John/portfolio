@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<rect width="1200" height="300" fill="#07070a"/>
+<g fill="none" stroke="#a66cff" stroke-width="3">
+<rect x="30" y="105" width="135" height="70" rx="10"/><rect x="205" y="105" width="135" height="70" rx="10"/><rect x="380" y="105" width="135" height="70" rx="10"/><rect x="555" y="105" width="135" height="70" rx="10"/><rect x="730" y="105" width="135" height="70" rx="10"/><rect x="905" y="105" width="135" height="70" rx="10"/>
+<path d="M165 140h40m135 0h40m135 0h40m135 0h40m135 0h40"/>
+</g>
+<g fill="#f1f1f4" font-family="Arial" font-size="16" text-anchor="middle"><text x="97" y="135">Technical</text><text x="97" y="157">evidence</text><text x="272" y="135">Finding</text><text x="272" y="157">&amp; impact</text><text x="447" y="135">Risk</text><text x="447" y="157">score</text><text x="622" y="135">Control</text><text x="622" y="157">/ gap</text><text x="797" y="135">NIS2 / GDPR</text><text x="797" y="157">area</text><text x="972" y="135">Owner +</text><text x="972" y="157">remediation</text></g>
+<text x="600" y="50" fill="#f1f1f4" font-family="Arial" font-size="27" text-anchor="middle">Security Evidence → Governance Workflow</text>
+</svg>
